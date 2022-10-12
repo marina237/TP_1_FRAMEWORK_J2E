@@ -4,4 +4,5 @@ function change_value(){
 
 
     document.getElementById('pId').value = pValue;
+    console.log( document.getElementById('pId').value);
 }

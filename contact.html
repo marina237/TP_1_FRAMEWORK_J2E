@@ -3,117 +3,130 @@
         <head>
             <title>TP1</title>
             <link href="main.css" rel="stylesheet">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <script src="TP1.js" language="JavaScript"></script>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
         </head>
 
 
         <body>
+        <!-- Responsive => Tout le contenu du site web doit être contenu ds une balise container-->
+            <!-- container-fluid =SIte web soit sur tte la page web-->
+            <div class="container-fluid">
+                <menu>
+                    <li><a href="#paragraphe">Menu local</a></li>
+                    <li><a href="https://passeport.dauphine.fr/" target="_blank" accesskey="p">Passeport Dauphine</a></li>
+
+                </menu>
+
+                <img src="C:/Users/mary-/TP_FRAMEWORK_J2E/media/images/dauphine_logo.png" alt="gif student" class="img-fluid">
+                <table class="table">
+                    <form action="" method="POST" name="formulaire_dauphine">
+                    <th>Formulaire</th>
+                    <tr>
+                        <td>
+                        <label for="firstName">Prénom :</label>
+                        </td>
+                        <td>
+                        <input type="text" maxlength="10" placeholder="Prénom">
+                        </div>
+                    </tr>
+
+                    <tr>
+                        <td>
+                        <label for="middleName">Deuxième prénom :</label>
+                        </div>
+                        <td>
+                        <input type="text" maxlength="10" placeholder="Deuxième prénom">
+                        </td>
+                    </div>
+
+                    <tr>
+                        <td>
+                        <label for="lastName" >Nom de famille:</label>
+                        </div>
+
+                        <td>
+                        <input type="text" maxlength="10" placeholder="Nom de famille" id="pId">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                        <label for="Gender"> Gender : </label>
+                        </td>
+
+                        <td>
+                        <input type="radio" id="Female" value="Female" name="genderChoice">
+                        <label for="female">Female</label>
+                        </td>
+
+                        <td> 
+                            <input type="radio" id="Male" value="Male" name="genderChoice">
+                            <label for="male">Male</label>
+                        </td>
+                    
+                        
+                    </tr>
+
+                    <tr>
+                        <td> 
+                            <label for="Phone">Phone :</label>
+                        </div>
+                        <td> 
+                            <input type="tel" id="numTel">
+                        </td>
+                    </tr>
 
 
-            <menu>
-                <li><a href="#paragraphe">Menu local</a></li>
-                <li><a href="https://passeport.dauphine.fr/" target="_blank" accesskey="p">Passeport Dauphine</a></li>
+                    <tr>
+                        <td> 
+                            <label for="Email" id="email">Email :</label>
+                        </div>
+                        <td> 
+                            <input type="email" class="form-control" id="email">
+                        </td>
+                    </tr>
 
-              </menu>
+                    <tr>
+                        <td> 
+                            <label for="Contact">Contact :</label>
+                        </td>
+                        <td> 
+                            <input type="checkbox" id="contact">
+                        </td>
+                    </tr>
 
-
-
-
-
-
-            <img src="C:/Users/mary-/TP_FRAMEWORK_J2E/media/images/dauphine_logo.png" alt="gif student">
-            <table>
-                <form action="" method="POST" name="formulaire_dauphine">
-                <th>Formulaire</th>
-                <tr>
-                    <td>
-                    <label for="firstName">Prénom :</label>
-                    </td>
-                    <td>
-                    <input type="text" maxlength="10" placeholder="Prénom">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    <label for="middleName">Deuxième prénom :</label>
-                    </td>
-                    <td>
-                    <input type="text" maxlength="10" placeholder="Deuxième prénom">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    <label for="lastName" >Nom de famille:</label>
-                    </td>
-                    <td>
-                    <input type="text" maxlength="10" placeholder="Nom de famille" id="pId">
-                    </td>
-                </tr>
-                    <td>
-                    <label for="Gender"> Gender : </label>
-                    </td>
-                    <td>
-                    <input type="radio" id="Female" value="Female" name="genderChoice">
-                    <label for="female">Female</label>
-                    </td>
-
-                    <td>  <input type="radio" id="Male" value="Male" name="genderChoice">
-                        <label for="male">Male</label></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="Phone">Phone :</label>
-                    </td>
-                    <td>
-                        <input type="tel" id="numTel">
-                    </td>
-                </tr>
+                    <tr>
+                        <td> <input type="submit" value="Submit the form"></td>
+                        <td> <input type="reset" value="Reset the form"></td>
+                        <td> <input type="button" value="Appel javascript" onClick="change_value(formulaire_dauphine);"></td>
+                    </tr>
 
 
-                <tr>
-                    <td>
-                        <label for="Email" id="email">Email :</label>
-                    </td>
-                    <td>
-                        <input type="email" id="email">
-                    </td>
-                </tr>
+                </form>
+            </table>
 
-                <tr>
-                    <td>
-                        <label for="Contact">Contact :</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" id="contact">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><input type="submit" value="Submit the form"></td>
-                    <td><input type="reset" value="Reset the form"></td>
-                    <td><input type="button" value="Appel javascript" onClick="change_value(formulaire_dauphine);"></td>
-                </tr>
+        
+            
+            <a id="paragraphe"></a>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi justo, blandit pretium orci id, cursus volutpat nunc. Nunc mollis augue risus, ut consectetur enim congue ut. Proin finibus, magna ac suscipit feugiat, risus risus dictum nunc, a ullamcorper ligula dui ac ipsum. Donec mollis tellus at commodo maximus. Duis nec tellus augue. Nulla nec dui varius, dignissim eros vitae, euismod nisl. Duis egestas eu felis nec lacinia. Aenean vel magna dui. Donec consectetur ultrices ante. Sed urna urna, commodo quis tempor at, convallis et sem. Donec faucibus nibh nec varius viverra. Integer venenatis lectus at nunc tincidunt, ac iaculis ex vehicula. Morbi tempor laoreet tortor, non tristique nulla sollicitudin in.
+            
+    
 
 
 
 
-            </form>
-        </table>
-
-
-        <p>
-        <a id="paragraphe"></a>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi justo, blandit pretium orci id, cursus volutpat nunc. Nunc mollis augue risus, ut consectetur enim congue ut. Proin finibus, magna ac suscipit feugiat, risus risus dictum nunc, a ullamcorper ligula dui ac ipsum. Donec mollis tellus at commodo maximus. Duis nec tellus augue. Nulla nec dui varius, dignissim eros vitae, euismod nisl. Duis egestas eu felis nec lacinia. Aenean vel magna dui. Donec consectetur ultrices ante. Sed urna urna, commodo quis tempor at, convallis et sem. Donec faucibus nibh nec varius viverra. Integer venenatis lectus at nunc tincidunt, ac iaculis ex vehicula. Morbi tempor laoreet tortor, non tristique nulla sollicitudin in.
-        </p>
-
-
-
-
-
-
+            </div>
         </body>
 
 
